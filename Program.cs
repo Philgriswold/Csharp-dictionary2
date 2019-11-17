@@ -55,12 +55,12 @@ namespace dictionary2
             */
 
             // Iterate the List of Dictionaries
-            foreach ()
+            foreach (Dictionary<string, string> word in dictionaryOfWords)
             {
                 // Iterate the KeyValuePairs of the Dictionary
-                foreach ()
+                foreach (KeyValuePair<string, string> definition in word)
                 {
-                    Console.WriteLine($"{wordData.Key}: {wordData.Value}");
+                    Console.WriteLine($"{definition.Key}: {definition.Value}");
                 }
             }
         }
